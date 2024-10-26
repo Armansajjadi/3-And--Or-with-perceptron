@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="icon" href="./images/icons8-school-96.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/446c27eaf0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>And with Perceptron</title>
+</head>
+
+
+<body class="p-0 m-0 box-border flex items-center justify-around h-screen bg-gray-100 font-mono">
+    <form class="flex flex-col items-center space-y-8" id="trainForm">
+        <h2 class="text-2xl text-blue-500 font-bold">Select the numbers you want to train</h2>
+        <select id="select1" class="border border-gray-300 rounded-lg p-2 w-32 text-center" required>
+            <option value="">X1</option>
+            <option value="0">0</option>
+            <option value="1">+1</option>
+        </select>
+        <select id="select2" class="border border-gray-300 rounded-lg p-2 w-32 text-center" required>
+            <option value="">X2</option>
+            <option value="0">0</option>
+            <option value="1">+1</option>
+        </select>
+        <select id="select3" class="border border-gray-300 rounded-lg p-2 w-32 text-center" required>
+            <option value="">Y</option>
+            <option value="-1">-1</option>
+            <option value="1">+1</option>
+        </select>
+        <button type="submit" id="subButton" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-200">Enter</button>
+        <button type="submit" id="trainBtn" style="background-color: rgb(165, 127, 255);" class="text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-200">TrainAll</button>
+
+    </form>
+    <form class="flex flex-col items-center space-y-8 hidden" id="testForm">
+        <h2 class="text-2xl text-blue-500 font-bold">Select the numbers you want to test</h2>
+        <select id="testselect1" class="border border-gray-300 rounded-lg p-2 w-32 text-center" required>
+            <option value="">X1</option>
+            <option value="0">0</option>
+            <option value="1">+1</option>
+        </select>
+        <select id="testselect2" class="border border-gray-300 rounded-lg p-2 w-32 text-center" required>
+            <option value="">X2</option>
+            <option value="0">0</option>
+            <option value="1">+1</option>
+        </select>
+        <button type="submit" id="testsubButton" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-200">Enter</button>
+    </form>
+    <script defer src="js/app/script.js"></script>
+</body>
+
+</html>
